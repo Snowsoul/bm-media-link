@@ -9,6 +9,7 @@ interface ContainerProps {
 const LinkButtonStyled = {
   Container: styled.button<ContainerProps>`
     display: flex;
+    flex: 1;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 26px;
@@ -37,6 +38,8 @@ const LinkButtonStyled = {
   Label: styled(BaseText)`
     flex: 1;
     color: #fff;
+    max-width: 100px;
+    justify-content: center;
   `,
 };
 

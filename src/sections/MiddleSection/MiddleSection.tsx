@@ -19,7 +19,7 @@ function MiddleSection() {
       <ButtonsContainer>
         <LinkButton hero label="View Instagram" icon="instagram" />
         <LinkButton label="Check YouTube" icon="youtube" />
-        <LinkButton label="View Instagram" icon="instagram" />
+        <LinkButton label="Hall of Fame" icon="bm" />
       </ButtonsContainer>
 
       <BottomContainer>
