@@ -8,7 +8,7 @@ const mainTheme: DefaultTheme = {
     black: "#000",
   },
   margins: {
-    big: "52px",
+    big: "32px",
     regular: "32px",
     small: "16px",
   },
