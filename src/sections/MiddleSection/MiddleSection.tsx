@@ -2,8 +2,11 @@ import React from "react";
 import MiddleSectionStyled from "./MiddleSection.styled";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import testbg from "../../assets/images/test-bg.png";
+import LinkButton from "../../components/LinkButton/LinkButton";
+import brandLogo from "../../assets/svg/bm-logo.svg";
 
-const { Container } = MiddleSectionStyled;
+const { Container, ButtonsContainer, BrandLogo, BottomContainer } =
+  MiddleSectionStyled;
 
 function MiddleSection() {
   return (
@@ -13,6 +16,15 @@ function MiddleSection() {
         poster={testbg}
         duration="7 min"
       />
+      <ButtonsContainer>
+        <LinkButton hero label="View Instagram" icon="instagram" />
+        <LinkButton label="Check YouTube" icon="youtube" />
+        <LinkButton label="View Instagram" icon="instagram" />
+      </ButtonsContainer>
+
+      <BottomContainer>
+        <BrandLogo src={brandLogo} />
+      </BottomContainer>
     </Container>
   );
 }
