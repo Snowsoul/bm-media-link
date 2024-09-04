@@ -5,6 +5,7 @@ import { mainTheme } from "./theme/mainTheme";
 import Background from "./components/Background/Background";
 import testbg from "./assets/images/test-bg.png";
 import TopSection from "./sections/TopSection/TopSection";
+import MiddleSection from "./sections/MiddleSection/MiddleSection";
 
 const { Container, Content } = AppStyled;
 
@@ -17,6 +18,7 @@ function App() {
           <Background image={testbg} />
           <Content>
             <TopSection />
+            <MiddleSection />
           </Content>
         </Container>
       </ThemeProvider>

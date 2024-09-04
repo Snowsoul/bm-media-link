@@ -19,6 +19,7 @@ const AppStyled = {
     z-index: 2;
     width: 400px;
     height: 300px;
+    flex-direction: column;
     /* background-color: ${(props) => props.theme.colors.white}; */
   `,
 };

@@ -5,6 +5,7 @@ const mainTheme: DefaultTheme = {
     darkGrey: "#222",
     white: "#fff",
     lightGrey: "#BCBCBC",
+    black: "#000",
   },
   margins: {
     big: "52px",
