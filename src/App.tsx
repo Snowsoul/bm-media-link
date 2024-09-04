@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import AppStyled, { GlobalStyle } from "./App.styled";
+import { ThemeProvider } from "styled-components";
+import { mainTheme } from "./theme/mainTheme";
+import Background from "./components/Background/Background";
+import testbg from "./assets/images/test-bg.png";
+import TopSection from "./sections/TopSection/TopSection";
+
+const { Container, Content } = AppStyled;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <ThemeProvider theme={mainTheme}>
+        <GlobalStyle />
+        <Container>
+          <Background image={testbg} />
+          <Content>
+            <TopSection />
+          </Content>
+        </Container>
+      </ThemeProvider>
+    </Fragment>
   );
 }
 
